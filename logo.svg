@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Formula Block Images</title>
+  <desc id="desc">A fountain pen nib containing an FB monogram with a red formula underline.</desc>
+
+  <g>
+    <path
+      d="M256 34C177 80 117 161 101 267l155 161 155-161C395 161 335 80 256 34Z"
+      fill="#252525"
+    />
+    <path
+      d="M256 69c-57 42-99 105-111 196l111 135 111-135c-12-91-54-154-111-196Z"
+      fill="#F5EFE3"
+    />
+
+    <path d="M256 69v331M145 265h222" fill="none" stroke="#252525" stroke-width="8" />
+    <circle cx="256" cy="265" r="15" fill="#B3202A" />
+
+    <text x="207" y="331" font-family="Georgia, Times New Roman, serif" font-size="136" font-weight="700" fill="#252525">F</text>
+    <text x="286" y="350" font-family="Georgia, Times New Roman, serif" font-size="118" font-weight="700" fill="#252525">B</text>
+
+    <path d="M109 468h294" fill="none" stroke="#B3202A" stroke-width="14" stroke-linecap="round" />
+  </g>
+</svg>

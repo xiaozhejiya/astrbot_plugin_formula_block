@@ -1,0 +1,15 @@
+name: astrbot_plugin_formula_block
+display_name: 公式块图片
+short_desc: 自动将回复中的 LaTeX 公式渲染为图片，适用于 Discord、Telegram、QQ 等平台。
+desc: >-
+  自动识别回复中的 LaTeX 公式，将含公式的 Markdown 文本按完整段落和公式块分段，
+  使用离线 KaTeX 和 Chromium 渲染为图片后发送。
+version: 1.0.0
+author: AstrBot Community
+repo: https://github.com/AstrBotDevs/astrbot_plugin_formula_block
+astrbot_version: ">=4.22.1"
+support_platforms:
+  - discord
+  - telegram
+  - aiocqhttp
+  - qq_official

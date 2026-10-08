@@ -1,0 +1,48 @@
+{
+  "enabled": {
+    "type": "bool",
+    "description": "启用公式图片渲染",
+    "hint": "将含公式的回复渲染为图片后发送。",
+    "default": true
+  },
+  "scope": {
+    "type": "string",
+    "description": "处理范围",
+    "hint": "默认仅处理模型回复；选择“所有发送结果”时，也处理其他插件生成的待发送文本。",
+    "options": ["model", "all"],
+    "labels": ["仅模型回复", "所有发送结果"],
+    "default": "model"
+  },
+  "max_chars": {
+    "type": "int",
+    "description": "每张图片的目标字数",
+    "hint": "按 Markdown 源文字符数计算，默认 1600。优先合并完整段落，公式不会截断；单个完整公式可能超过此值。",
+    "default": 1600,
+    "slider": {"min": 200, "max": 8000, "step": 100}
+  },
+  "send_source": {
+    "type": "bool",
+    "description": "附加公式源码",
+    "hint": "在每张图片后附上该分段的 Markdown/LaTeX 源码，方便复制。",
+    "default": false
+  },
+  "prompt_hint": {
+    "type": "bool",
+    "description": "启用公式格式提示",
+    "hint": "在模型提示词中要求复杂公式优先使用完整的 $$...$$ 或 \\[...\\] 公式块。",
+    "default": true
+  },
+  "render_timeout": {
+    "type": "int",
+    "description": "渲染超时（秒）",
+    "hint": "单次渲染的等待时间。失败后自动重试一次；两次均失败时发送原文。",
+    "default": 10,
+    "slider": {"min": 1, "max": 60, "step": 1}
+  },
+  "platforms": {
+    "type": "list",
+    "description": "生效平台",
+    "hint": "留空表示所有平台。可填写平台标识，例如 discord、telegram、aiocqhttp（OneBot/QQ）或 qq_official（QQ 官方机器人）。",
+    "default": []
+  }
+}
