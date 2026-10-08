@@ -6,7 +6,7 @@ desc: >-
   使用离线 KaTeX 和 Chromium 渲染为图片后发送。
 version: 1.0.0
 author: AstrBot Community
-repo: https://github.com/AstrBotDevs/astrbot_plugin_formula_block
+repo: https://github.com/xiaozhejiya/astrbot_plugin_formula_block
 astrbot_version: ">=4.22.1"
 support_platforms:
   - discord
