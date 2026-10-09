@@ -4,9 +4,18 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from astrbot.api import logger, star
-from astrbot.api.event import AstrMessageEvent, filter
-from astrbot.api.message_components import Image, Plain
+from astrbot.api import (
+    logger,
+    star,
+)
+from astrbot.api.event import (
+    AstrMessageEvent,
+    filter,
+)
+from astrbot.api.message_components import (
+    Image,
+    Plain,
+)
 from astrbot.api.provider import ProviderRequest
 from astrbot.core import html_renderer
 from astrbot.core.message.message_event_result import ResultContentType
